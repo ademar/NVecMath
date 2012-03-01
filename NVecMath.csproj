@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FC095D5-5EC4-4422-82D2-028D6232E655}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NVecMath</RootNamespace>
+    <AssemblyName>NVecMath</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AxisAngle4d.cs" />
+    <Compile Include="AxisAngle4f.cs" />
+    <Compile Include="Color3b.cs" />
+    <Compile Include="Color3f.cs" />
+    <Compile Include="Color4b.cs" />
+    <Compile Include="Color4f.cs" />
+    <Compile Include="GMatrix.cs" />
+    <Compile Include="GVector.cs" />
+    <Compile Include="Matrix3d.cs" />
+    <Compile Include="Matrix3f.cs" />
+    <Compile Include="Matrix4d.cs" />
+    <Compile Include="Matrix4f.cs" />
+    <Compile Include="MismatchedSizeException.cs" />
+    <Compile Include="Point2d.cs" />
+    <Compile Include="Point2f.cs" />
+    <Compile Include="Point2i.cs" />
+    <Compile Include="Point3d.cs" />
+    <Compile Include="Point3f.cs" />
+    <Compile Include="Point3i.cs" />
+    <Compile Include="Point4d.cs" />
+    <Compile Include="Point4f.cs" />
+    <Compile Include="Point4i.cs" />
+    <Compile Include="Quat4d.cs" />
+    <Compile Include="Quat4f.cs" />
+    <Compile Include="SingularMatrixException.cs" />
+    <Compile Include="TexCoord2f.cs" />
+    <Compile Include="TexCoord3f.cs" />
+    <Compile Include="TexCoord4f.cs" />
+    <Compile Include="Tuple2d.cs" />
+    <Compile Include="Tuple2f.cs" />
+    <Compile Include="Tuple2i.cs" />
+    <Compile Include="Tuple3b.cs" />
+    <Compile Include="Tuple3d.cs" />
+    <Compile Include="Tuple3f.cs" />
+    <Compile Include="Tuple3i.cs" />
+    <Compile Include="Tuple4b.cs" />
+    <Compile Include="Tuple4d.cs" />
+    <Compile Include="Tuple4f.cs" />
+    <Compile Include="Tuple4i.cs" />
+    <Compile Include="VecMathUtil.cs" />
+    <Compile Include="Vector2d.cs" />
+    <Compile Include="Vector2f.cs" />
+    <Compile Include="Vector3d.cs" />
+    <Compile Include="Vector3f.cs" />
+    <Compile Include="Vector4d.cs" />
+    <Compile Include="Vector4f.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
